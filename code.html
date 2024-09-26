@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ibtehaj Hussain - Portfolio</title>
+    <style>
+        /* General Body Styling with textured background */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.transparenttextures.com/patterns/light-wool.png') repeat, linear-gradient(135deg, #d9b3ff, #add8e6); /* Light purple and light blue textured background */
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #F8F8F8, #2B547E);
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            max-width: 95%;
+            margin: 20px auto;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px auto;
+            padding: 40px;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            color: #333;
+            position: relative;
+            background: linear-gradient(to right, #f0f0f0, #e0e0e0); /* Light grey gradient */
+        }
+
+        h2 {
+            color: #2B547E;
+            font-size: 2em;
+            border-bottom: 2px solid #87CEEB;
+            padding-bottom: 10px;
+        }
+
+        /* Bold Table Styling for Sections */
+        .bold-table {
+            width: 100%;
+            border: 2px solid #2B547E;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Folder Styling */
+        .folder {
+            background-color: #2B547E;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+        }
+
+        .folder:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .folder:after {
+            content: '\002B'; /* Plus icon */
+            color: white;
+            font-weight: bold;
+            float: right;
+        }
+
+        .folder.active:after {
+            content: "\2212"; /* Minus sign */
+        }
+
+        .folder-content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        /* Footer Styling with Animation */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Footer Animation */
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300%;
+            height: 100%;
+            background: linear-gradient(135deg, #F8F8F8, #2B547E, #87CEEB);
+            animation: moveGradient 10s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes moveGradient {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+            z-index: 1;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header class="box-shadow">
+    <h1>Ibtehaj Hussain - Portfolio</h1>
+</header>
+
+<!-- Introduction Section with Bold Table -->
+<section class="container">
+    <h2>Introduction</h2>
+    <table class="bold-table">
+        <tr>
+            <td>
+                Hi, I’m Ibtehaj Hussain, a results-driven digital marketer with over 3 years of hands-on experience in Amazon affiliate marketing. My expertise lies in crafting high-converting content, optimizing affiliate campaigns, and leveraging data to maximize revenue streams.
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- Skills Section as a Collapsible Folder -->
+<section class="container">
+    <h2>Skills</h2>
+    <button class="folder">Click to see my Skills</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Amazon Affiliate Marketing: Proven success in selecting profitable products and optimizing affiliate strategies.</td>
+            </tr>
+        </table>
+        <table class="bold-table">
+            <tr>
+                <td>SEO and Content Optimization: Expertise in keyword research, on-page SEO, and improving affiliate earnings.</td>
+            </tr>
+        </table>
+        <table class="bold-table">
+            <tr>
+                <td>Digital Marketing: Knowledge of social media marketing, paid ads, and email campaigns for an effective online presence.</td>
+            </tr>
+        </table>
+        <table class="bold-table">
+            <tr>
+                <td>Communication: Excellent English communication skills for clear and engaging content.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Experience Section as a Collapsible Folder -->
+<section class="container">
+    <h2>Experience</h2>
+    <button class="folder">Click to see my Experience</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Affiliate Marketing Specialist (3 Years): Developed content that significantly increased affiliate earnings.</td>
+            </tr>
+        </table>
+        <table class="bold-table">
+            <tr>
+                <td>Content Creator and Strategist: Created product reviews and guides that convert readers into buyers.</td>
+            </tr>
+        </table>
+        <table class="bold-table">
+            <tr>
+                <td>Digital Marketing Campaigns: Managed SEO and paid advertising to improve conversion rates.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- What I Offer Section as a Collapsible Folder -->
+<section class="container">
+    <h2>What I Offer</h2>
+    <button class="folder">Click to see What I Offer</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>I offer a tailored approach to Amazon affiliate marketing, focusing on content that converts and strategies that scale.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Projects Section with 10 Amazon Projects -->
+<section class="container">
+    <h2>Amazon Projects</h2>
+    <button class="folder">Project 1: Amazon Electronics Campaign</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>This project focused on promoting electronics products on Amazon. I optimized content and implemented affiliate strategies to increase sales.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 2: Amazon Lifestyle Niche</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Developed content strategies and affiliate links for lifestyle products. Successfully increased traffic by 20%.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 3: Amazon Health Products</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Created in-depth reviews and content for health products on Amazon. The campaign resulted in a 25% increase in sales.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 4: Amazon Gadgets</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Focused on gadgets and technology products on Amazon, with a comprehensive affiliate strategy that boosted revenue by 15%.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 5: Amazon Home Improvement</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Led a campaign for home improvement tools, generating increased customer engagement and a 30% boost in affiliate earnings.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 6: Amazon Beauty Products</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Executed a content plan for beauty products, driving 40% more traffic through SEO and social media marketing.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 7: Amazon Kitchen Appliances</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Managed an affiliate strategy for kitchen appliances, resulting in a 22% increase in sales and brand visibility.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 8: Amazon Sports Equipment</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Developed content for sports equipment, successfully increasing conversion rates and customer retention.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 9: Amazon Office Supplies</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Optimized product descriptions and created engaging content for office supplies, leading to a significant rise in traffic.</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="folder">Project 10: Amazon Fashion Accessories</button>
+    <div class="folder-content">
+        <table class="bold-table">
+            <tr>
+                <td>Executed a successful affiliate marketing campaign for fashion accessories, improving sales and customer engagement by 35%.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!-- Fun Fact Section -->
+<section class="fun-fact">
+    <h2>Random Fun Fact:</h2>
+    <p id="funFactText"></p>
+    <button onclick="generateFunFact()">Get Fun Fact</button>
+</section>
+
+<footer>
+    <p>&copy; 2024 Ibtehaj Hussain. All rights reserved.</p>
+</footer>
+
+<script>
+    // Fun Fact Generator
+    const funFacts = [
+        "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+        "Bananas are berries, but strawberries aren't.",
+        "The Eiffel Tower can be 15 cm taller during the summer, due to thermal expansion.",
+        "Octopuses have three hearts and blue blood.",
+        "A group of flamingos is called a 'flamboyance'."
+    ];
+
+    function generateFunFact() {
+        const randomIndex = Math.floor(Math.random() * funFacts.length);
+        document.getElementById("funFactText").innerText = funFacts[randomIndex];
+    }
+
+    // Collapsible Folder Functionality
+    var folders = document.getElementsByClassName("folder");
+    for (var i = 0; i < folders.length; i++) {
+        folders[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
